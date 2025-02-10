@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual Environments
+venv/
+env/
+*.env
+.env/
+
+# Django specific
+db.sqlite3
+*.sqlite3
+/media/
+staticfiles/
+*.log
+
+# Migrations (optional)
+**/migrations/*.pyc
+**/migrations/*.py[co]
+**/migrations/__pycache__/
+
+# Ignore compiled code
+*.pyc
+*.pyo
+*.pyd
+
+# IDEs and Editors
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test coverage reports
+htmlcov/
+.coverage
+.tox/
+nosetests.xml
+pytest_cache/
+junit.xml
+
+# Node modules (if using frontend build tools)
+node_modules/
+npm-debug.log
+
+# Celery beat schedule file
+celerybeat-schedule
+
+# Local development files
+*.local
+*.dev
