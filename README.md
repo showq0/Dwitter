@@ -87,13 +87,12 @@ Now, you can open your browser and navigate to `http://127.0.0.1:8000/` to vie
 
 ## Usage Instructions
 
-- **Register and Log In:** Sign up to create a profile and log in to access the platform.
 - **Create Dweets:** Post dweets with a maximum of 140 characters to share your thoughts.
 - **Follow/Unfollow Users:** Visit other user profiles and follow or unfollow them to customize your feed.
 - **View Feed:** On your dashboard, view dweets from the profiles you follow, sorted by creation date.
 
 ## Future Improvements
-
+- **Register and Log In:** Sign up to create a profile and log in to access the platform.
 Here are some planned improvements for the Dwitter platform:
 
 - **Comments and Likes:** Users will be able to interact with dweets by commenting and liking them.
