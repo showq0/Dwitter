@@ -1,7 +1,8 @@
 # Dwitter Overview
 
 **Dwitter** is a simple social media web application built using **Django**, where users can create posts ("dweets"), follow other profiles, and view dweets from the profiles they follow. This project demonstrates key concepts like user authentication, relational models, and dynamic content rendering.
-
+### 🚀 Live Demo
+Visit the deployed app: [Dwitter Live](https://dwitterapp.onrender.com/dwitter/)
 ## Features
 
 - **User Profiles:** Each user has a unique profile created upon registration, providing a personalized experience.
