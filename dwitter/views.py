@@ -4,6 +4,11 @@ from dwitter.forms import DweetForm
 # from django.http import HttpResponse, JsonResponse
 # Create your views here.
 
+
+def home(request):
+    return render(request, "dwitter/home.html")
+
+
 def dashboard(request):
     message=""
     form = DweetForm(request.POST or None)
@@ -16,7 +21,7 @@ def dashboard(request):
     followed_dweet = Dweet.objects.filter(user__profile__in = request.user.profile.follows.all()) .order_by("-created_at")
     data = {
         "dweets": followed_dweet,
-        "form" : form ,
+        "form": form,
         "message": message
     }
     return render(request, "dwitter/dashboard.html", data)

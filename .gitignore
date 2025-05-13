@@ -6,11 +6,7 @@ __pycache__/
 *.so
 
 # Virtual Environments
-venv/
-env/
-*.env
-.env/
-
+.env
 # Django specific
 db.sqlite3
 *.sqlite3
@@ -54,3 +50,4 @@ celerybeat-schedule
 # Local development files
 *.local
 *.dev
+

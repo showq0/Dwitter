@@ -1,0 +1,40 @@
+ # docker volumes
+ # utlize volumes
+ # useful to parsisit data between our container restarts
+ # this allow our application to update file without rebuild the entire image
+
+name: dwitter-project
+services:
+
+   app :
+    build:
+        context: .
+        dockerfile: Dockerfile
+      #name image
+    image: dwitter-image
+    container_name: dwitter-container
+
+    volumes:
+      - .:/app #direct link to the container
+
+    ports:
+      - 8000:8000
+#    depends_on:
+#        - db
+
+
+#   db:
+#     image: postgres:17
+#     container_name: db-container
+#     restart: always # restart  if stopped
+#     volumes:
+#       - postgres_data:/var/lib/postgresql/data
+#     environment:
+#       POSTGRES_USER: postgres
+#       POSTGRES_PASSWORD: root
+#       POSTGRES_DB: bd
+#     ports:
+#       - "5432:5432"
+## for define volume to persist our postgres data to prevent data loss
+#volumes:
+#  postgres_data:

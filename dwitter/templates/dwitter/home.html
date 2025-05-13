@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="column is-8 is-offset-2">
+    <div class="box has-text-centered">
+        <h2 class="title is-2">Welcome to Dwitter!</h2>
+        <p class="subtitle is-5">A minimal social network where you can share short messages — dweets.</p>
+
+        {% if user.is_authenticated %}
+            <p class="mt-4">You're already logged in as <strong>{{ user.username }}</strong>.</p>
+            <a href="{% url 'dwitter:dashboard' %}" class="button is-success mt-3">Go to Dashboard</a>
+        {% else %}
+            <div class="buttons is-centered mt-5">
+        <a href="" class="button is-success">Log In</a>
+        <a href="" class="button is-success">Sign Up</a>
+            </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock content %}
