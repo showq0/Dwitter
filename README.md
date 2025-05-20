@@ -1,7 +1,8 @@
 # Dwitter Overview
 
 **Dwitter** is a simple social media web application built using **Django**, where users can create posts ("dweets"), follow other profiles, and view dweets from the profiles they follow. This project demonstrates key concepts like user authentication, relational models, and dynamic content rendering.
-
+### 🚀 Live Demo
+Visit the deployed app: [Dwitter Live](https://dwitterapp.onrender.com/dwitter/)
 ## Features
 
 - **User Profiles:** Each user has a unique profile created upon registration, providing a personalized experience.
@@ -86,13 +87,12 @@ Now, you can open your browser and navigate to `http://127.0.0.1:8000/` to vie
 
 ## Usage Instructions
 
-- **Register and Log In:** Sign up to create a profile and log in to access the platform.
 - **Create Dweets:** Post dweets with a maximum of 140 characters to share your thoughts.
 - **Follow/Unfollow Users:** Visit other user profiles and follow or unfollow them to customize your feed.
 - **View Feed:** On your dashboard, view dweets from the profiles you follow, sorted by creation date.
 
 ## Future Improvements
-
+- **Register and Log In:** Sign up to create a profile and log in to access the platform.
 Here are some planned improvements for the Dwitter platform:
 
 - **Comments and Likes:** Users will be able to interact with dweets by commenting and liking them.
