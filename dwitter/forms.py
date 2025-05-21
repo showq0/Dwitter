@@ -1,5 +1,7 @@
 from django import forms
 from dwitter.models import Dweet
+
+
 class DweetForm(forms.ModelForm):
     body = forms.CharField(
         required=True,
@@ -7,8 +9,9 @@ class DweetForm(forms.ModelForm):
             attrs={
                 "placeholder": "Dweet something...",
                 "class": "textarea is-success is-medium",
-                } ),
-                label="", )
+            }),
+        label="", )
+
     class Meta:
         model = Dweet
-        exclude = ("user", )
+        exclude = ("user",)
