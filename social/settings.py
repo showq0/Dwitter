@@ -131,5 +131,5 @@ STORAGES = {
 # DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CSRF_TRUSTED_ORIGINS = ['https://dwitterapp.onrender.com', "https://dwitter-latest.onrender.com"]
 
-'# SESSION_COOKIE_SECURE = True
+# SESSION_COOKIE_SECURE = True
 # CSRF_COOKIE_SECURE = True
